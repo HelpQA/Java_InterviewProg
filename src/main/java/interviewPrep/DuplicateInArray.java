@@ -11,7 +11,7 @@ public class DuplicateInArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String[] names = { "java", "javascript", "ruby", "C", "python", "java" };
+		String[] names = { "java", "javascript", "ruby", "C", "python", "java"};
 
 		// 1 : but is worst method O(N^2)
 		for (int i = 0; i < names.length; i++) {
@@ -32,6 +32,7 @@ public class DuplicateInArray {
 			}
 		}
 		
+		System.out.println("********************");
 		// 3 Using HashSet
 		Map<String,Integer> storeMap = new HashMap<String, Integer>();
 		for(String name:names)
